@@ -1,5 +1,8 @@
-# Skola24 as ical
 
+# This is customized for my class at YRGO
+
+# The original project can be checked out below but is broken at the moment
+# Skola24 as ical
 This service is hosted at [https://skola24.robingronberg.se](https://skola24.robingronberg.se)
 
 It is build using docker (for hosting) and nodejs
