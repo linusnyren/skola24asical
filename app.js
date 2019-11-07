@@ -19,7 +19,14 @@ function main() {
     const group = "feff0319-ccb5-4348-b266-a7c979539b09"
     const domain = "goteborg.skola24.se"
     const id =
-    weeks = [0, 1, 2, 3, 4, 5, 6].map(x => (x + moment().isoWeek()) % 52).map(x => x == 0 ? 52 : x)
+    let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(x => (x + moment().isoWeek()) % 52).map(x => x == 0 ? 52 : x)
+
+    let weeks = []
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > moment().isoWeek()) {
+            weeks.push(array[i])
+        }
+    }
 
     counter = weeks.length
     all_events = []
